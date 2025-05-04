@@ -1,57 +1,60 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #ffe4e1;
-  padding: 20px;
-}
-
-input, button {
-  padding: 10px;
-  font-size: 16px;
-}
-
-
-#babyImage {
-  width: 300px;
-  margin-top: 20px;
-  border-radius: 20px;
-
-  /* ここ追加！ */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-body {
-  background-color: #fcd7e7; /* パステルピンク */
   font-family: 'Arial', sans-serif;
   text-align: center;
-  color: #4b0082; /* おしゃれな文字色（紫） */
+  color: #4b0082;
   padding: 20px;
-}
-
-h1 {
-  font-size: 30px; /* ←ドーンと大きく */
-  font-weight: bold; /* ←文字を太く */
-  color: #ff69b4; /* ←可愛いピンク色 */
-  margin-top: 30px; /* ←上にスペース */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* ←影をちょっと強めにする */
-  font-family: 'Cursive', 'Arial', sans-serif; /* ←手書きっぽいおしゃれフォント */
-}
-
-body {
-  background-image: url('images/baby1.jpg'); /* ← images/ をつける */
+  background-color: #fcd7e7;
+  background-image: url('images/baby1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff69b4;
+  margin-top: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: 'Cursive', 'Arial', sans-serif;
+}
+
 #babyMessage {
-  font-size: 30px;   /* ←文字をめちゃくちゃ大きく！ */
-  font-weight: bold; /* ←文字をぶあつく！ */
-  color: #ff69b4;    /* ←かわいいピンク色！ */
-  margin-top: 30px;  /* ←上にすき間あける！ */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* ←ふわっと影をつけて立体感出す！ */
-  font-family: 'Cursive', 'Arial', sans-serif; /* ←手書き風でオシャレに！ */
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff69b4;
+  margin-top: 30px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Cursive', 'Arial', sans-serif;
+}
+
+input, button {
+  padding: 12px 20px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin: 10px auto;
+  display: block;
+}
+
+#babyImage {
+  max-width: 300px;
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
 }
